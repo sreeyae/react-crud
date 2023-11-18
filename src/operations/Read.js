@@ -9,7 +9,7 @@ export const Read = () => {
   const getData=async()=>{ 
     try 
     { 
-       const response=await axios.get("http://localhost:5000/api/v1/employee"); 
+       const response=await axios.get("https://crud-bend-express-v5r8.onrender.com/api/v1/employee"); 
        console.log(response); 
        setData(response.data); 
     }catch(error) 
@@ -21,7 +21,7 @@ export const Read = () => {
   const handleDelete=async(id)=>{ 
     try 
     { 
-       await axios.delete(`http://localhost:5000/api/v1/employee/${id}`) 
+       await axios.delete(`https://crud-bend-express-v5r8.onrender.com/api/v1/employee/${id}`) 
        getData(); 
     }catch(error) 
     { 

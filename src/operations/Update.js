@@ -14,7 +14,7 @@ export const Update = () => {
   const handleUpdate=async(e)=>{
     e.preventDefault();
     try{
-      await axios.patch(`http://localhost:5000/api/v1/employee/${id}`,{
+      await axios.patch(`https://crud-bend-express-v5r8.onrender.com/api/v1/employee/${id}`,{
         ename,email,emobile
       })
     history("/")
